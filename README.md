@@ -179,6 +179,9 @@ Aqui están creadas todas las máquinas y asociadas a cada una su correspondient
     GRANT ALL PRIVILEGES ON db_wordpress.* TO 'Pablo'@'10.0.2.%';
     FLUSH PRIVILEGES;
     ```
+Finalmente ponemos nuestra IP en google http://http://52.204.26.215/ y nos encontrariamos con esta página:
+  
+
 
 ---
 
