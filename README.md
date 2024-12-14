@@ -1,4 +1,4 @@
-# Despliegue de WordPress con Balanceador de Carga, NFS y MySQL
+# Despliegue de WordPress con Balanceador de Carga, Backends, NFS y MySQL
 
 Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balanceador de carga, un servidor NFS para compartir archivos, servidores backend y una base de datos MySQL. El documento incluye los pasos detallados para configurar cada componente y asegurar un despliegue.
 
