@@ -179,7 +179,7 @@ Aqui están creadas todas las máquinas y asociadas cada una a su correspondient
     GRANT ALL PRIVILEGES ON db_wordpress.* TO 'Pablo'@'10.0.2.%';
     FLUSH PRIVILEGES;
     ```
-Finalmente ponemos nuestra IP en google http://http://52.204.26.215/ y nos encontrariamos con esta página:
+Finalmente ponemos nuestra IP en google http://52.204.26.215/ y nos encontrariamos con esta página:
 ![image](https://github.com/user-attachments/assets/63d9d51c-5361-4e26-a9ae-ea0482bdb79e)
 Seguidamente nos entramos en nuestro BACKEND y cambiamos esto:
 ![image](https://github.com/user-attachments/assets/f6bf470e-386c-4613-ad59-3898024d8957)
