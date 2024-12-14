@@ -5,10 +5,17 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
 ---
 
 ## Tabla de Contenidos
-1. [Configuración del Balanceador de Carga](#configuración-del-balanceador-de-carga)
-2. [Configuración del Servidor NFS](#configuración-del-servidor-nfs)
-3. [Configuración de los Backends](#configuración-de-los-backends)
-4. [Configuración del Servidor de Base de Datos](#configuración-del-servidor-de-base-de-datos)
+1. [Infraestructura](#infraestructura)
+2. [Configuración del Balanceador de Carga](#configuración-del-balanceador-de-carga)
+3. [Configuración del Servidor NFS](#configuración-del-servidor-nfs)
+4. [Configuración de los Backends](#configuración-de-los-backends)
+5. [Configuración del Servidor de Base de Datos](#configuración-del-servidor-de-base-de-datos)
+
+---
+
+## Infraestructura
+
+Aquí puedes agregar una descripción detallada de tu infraestructura, como el tipo de red, las IPs utilizadas, el propósito de cada servidor, y cualquier detalle relevante sobre la arquitectura de tu sistema.
 
 ---
 
@@ -45,12 +52,11 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
     sudo bash -c "cat > /etc/apache2/sites-available/load-balancer.conf <<EOL
     <VirtualHost *:80>
         <Proxy balancer://mycluster>
-            BalancerMember http://10.0.2.226
-            BalancerMember http://10.0.2.166
+            BalancerMember http://10.0.2.161
+            BalancerMember http://10.0.2.135
         </Proxy>
         ProxyPass / balancer://mycluster/
         ProxyPassReverse / balancer://mycluster/
-        ServerName wordpressjosein.zapto.org
     </VirtualHost>
     EOL"
     ```
@@ -127,7 +133,7 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
 
 4. **Montar el directorio compartido NFS**:
     ```bash
-    sudo mount 10.0.2.130:/var/nfs/compartir /var/nfs/compartir
+    sudo mount 10.0.2.61:/var/nfs/compartir /var/nfs/compartir
     ```
 
 5. **Habilitar la nueva configuración de Apache**:
@@ -139,7 +145,7 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
 
 6. **Hacer persistente el montaje NFS**:
     ```bash
-    echo "10.0.2.130:/var/nfs/compartir    /var/nfs/compartir   nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0" | sudo tee -a /etc/fstab
+    echo "10.0.2.61:/var/nfs/compartir    /var/nfs/compartir   nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0" | sudo tee -a /etc/fstab
     ```
 
 ---
@@ -159,18 +165,17 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
 
 3. **Configurar MySQL para escuchar en una IP específica**:
     ```bash
-    sudo sed -i "s/^bind-address\s*=.*/bind-address = 10.0.3.139/" /etc/mysql/mysql.conf.d/mysqld.cnf
+    sudo sed -i "s/^bind-address\s*=.*/bind-address = 10.0.3.88/" /etc/mysql/mysql.conf.d/mysqld.cnf
     sudo systemctl restart mysql
     ```
 
 4. **Configurar la base de datos y el usuario para WordPress**:
     ```bash
-    sudo mysql -u root <<EOF
-    CREATE DATABASE db_wordpress;
-    CREATE USER 'Josein'@'10.0.3.%' IDENTIFIED BY '1234';
-    GRANT ALL PRIVILEGES ON db_wordpress.* TO 'Josein'@'10.0.3.%';
+    sudo mysql -u root 
+    CREATE DATABASE db_wordpresspablo;
+    CREATE USER 'Pablo'@'10.0.2.%' IDENTIFIED BY '1234';
+    GRANT ALL PRIVILEGES ON db_wordpress.* TO 'Pablo'@'10.0.2.%';
     FLUSH PRIVILEGES;
-    EOF
     ```
 
 ---
@@ -182,3 +187,4 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
   - MySQL: `/var/log/mysql/error.log`
 
 **¡Feliz despliegue de WordPress!**
+
