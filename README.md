@@ -14,7 +14,7 @@ Este proyecto describe cómo desplegar un sitio de WordPress utilizando un balan
 ---
 
 ## Infraestructura
-Aqui están creadas todas las máquinas y asociadas a cada una su correspondiente grupo de seguridad.
+Aqui están creadas todas las máquinas y asociadas cada una a su correspondiente grupo de seguridad.
 ![image](https://github.com/user-attachments/assets/c94c658b-0c09-491e-84da-c3b30226cfc6)
 
 
