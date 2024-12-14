@@ -180,7 +180,9 @@ Aqui están creadas todas las máquinas y asociadas a cada una su correspondient
     FLUSH PRIVILEGES;
     ```
 Finalmente ponemos nuestra IP en google http://http://52.204.26.215/ y nos encontrariamos con esta página:
-  
+![image](https://github.com/user-attachments/assets/63d9d51c-5361-4e26-a9ae-ea0482bdb79e)
+
+ 
 
 
 ---
