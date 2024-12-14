@@ -183,7 +183,9 @@ Finalmente ponemos nuestra IP en google http://http://52.204.26.215/ y nos encon
 ![image](https://github.com/user-attachments/assets/63d9d51c-5361-4e26-a9ae-ea0482bdb79e)
 Seguidamente nos entramos en nuestro BACKEND y cambiamos esto:
 ![image](https://github.com/user-attachments/assets/f6bf470e-386c-4613-ad59-3898024d8957)
-Por último
+Por último al hacer la instalación nos encontraremos con esta página y ponemos nuestros datos y como queremos que sea:
+![image](https://github.com/user-attachments/assets/0ded3bc9-ebcb-4665-a97a-45639ff2c170)
+
 
  
 
