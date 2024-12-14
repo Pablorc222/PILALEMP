@@ -187,18 +187,15 @@ Por último al hacer la instalación nos encontraremos con esta página y ponemo
 ![image](https://github.com/user-attachments/assets/0ded3bc9-ebcb-4665-a97a-45639ff2c170)
 Y ya estaría realizado el proyecto.
 ![image](https://github.com/user-attachments/assets/8b52ac1e-35bc-4800-884f-cda34c4cf8ca)
-
-
- 
-
+![image](https://github.com/user-attachments/assets/31a54620-3943-4f30-a373-016327ce8aa9)
 
 ---
 
 ## Notas
-- Asegúrate de que las IPs y rutas coincidan con tu configuración de red.
-- Para solucionar problemas, revisa los logs en:
+- Hay que asegurarse de que las IPs y rutas coincidan con la configuración de red.
+- Para solucionar problemas, revisar los logs en:
   - Apache: `/var/log/apache2/error.log`
   - MySQL: `/var/log/mysql/error.log`
 
-**¡Feliz despliegue de WordPress!**
+
 
