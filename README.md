@@ -185,6 +185,8 @@ Seguidamente nos entramos en nuestro BACKEND y cambiamos esto:
 ![image](https://github.com/user-attachments/assets/f6bf470e-386c-4613-ad59-3898024d8957)
 Por último al hacer la instalación nos encontraremos con esta página y ponemos nuestros datos y como queremos que sea:
 ![image](https://github.com/user-attachments/assets/0ded3bc9-ebcb-4665-a97a-45639ff2c170)
+Y ya estaría realizado el proyecto.
+![image](https://github.com/user-attachments/assets/8b52ac1e-35bc-4800-884f-cda34c4cf8ca)
 
 
  
