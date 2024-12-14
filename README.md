@@ -179,15 +179,39 @@ Aqui están creadas todas las máquinas y asociadas cada una a su correspondient
     GRANT ALL PRIVILEGES ON db_wordpress.* TO 'Pablo'@'10.0.2.%';
     FLUSH PRIVILEGES;
     ```
-Finalmente ponemos nuestra IP en google http://52.204.26.215/ y nos encontrariamos con esta página:
-![image](https://github.com/user-attachments/assets/63d9d51c-5361-4e26-a9ae-ea0482bdb79e)
-Seguidamente nos entramos en nuestro BACKEND y cambiamos esto:
-![image](https://github.com/user-attachments/assets/f6bf470e-386c-4613-ad59-3898024d8957)
-Por último al hacer la instalación nos encontraremos con esta página y ponemos nuestros datos y como queremos que sea:
-![image](https://github.com/user-attachments/assets/0ded3bc9-ebcb-4665-a97a-45639ff2c170)
-Y ya estaría realizado el proyecto.
-![image](https://github.com/user-attachments/assets/8b52ac1e-35bc-4800-884f-cda34c4cf8ca)
-![image](https://github.com/user-attachments/assets/31a54620-3943-4f30-a373-016327ce8aa9)
+## Proceso de Instalación de WordPress
+
+Finalmente, al poner nuestra IP en el navegador (por ejemplo, `http://52.204.26.215/`), nos encontraremos con la página de instalación de WordPress:
+
+![Pantalla de bienvenida de WordPress](https://github.com/user-attachments/assets/63d9d51c-5361-4e26-a9ae-ea0482bdb79e)
+
+---
+
+### Paso 1: Configuración de la Base de Datos
+
+Una vez en la página de instalación, nos dirigimos a nuestro servidor **BACKEND** y realizamos la siguiente configuración:
+
+![Configuración en el Backend](https://github.com/user-attachments/assets/f6bf470e-386c-4613-ad59-3898024d8957)
+
+---
+
+### Paso 2: Instalación y Datos de WordPress
+
+Después de realizar la configuración, continuamos con la instalación de WordPress. Nos encontraremos con una pantalla similar a la siguiente, donde debemos ingresar los datos necesarios para finalizar la instalación y configurar el sitio:
+
+![Pantalla de instalación de WordPress](https://github.com/user-attachments/assets/0ded3bc9-ebcb-4665-a97a-45639ff2c170)
+
+---
+
+### Paso 3: ¡Listo!
+
+Finalmente, después de completar la instalación, podremos acceder a nuestra página de WordPress funcionando correctamente. ¡El proyecto estará listo!
+
+![WordPress funcionando correctamente](https://github.com/user-attachments/assets/8b52ac1e-35bc-4800-884f-cda34c4cf8ca)
+
+Y así es como se ve el resultado final:
+
+![Página de inicio de WordPress](https://github.com/user-attachments/assets/31a54620-3943-4f30-a373-016327ce8aa9)
 
 ---
 
